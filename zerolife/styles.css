@@ -1,0 +1,50 @@
+.nav-bg{
+    background-color: black!important;
+}
+.nav-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
+}
+.nav-h1{
+    margin-left: 0;
+    padding: none;
+    font-size: 30px;
+    padding: 0 5px;
+}
+.nav-link{
+
+    font-size: 20px!important;
+    position: relative;
+    display: inline-block; /* ensures width matches text only */
+    text-decoration: none;
+    color: #fff;
+}
+.nav-link::after{
+    
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.1em; /* slight gap below text */
+    height: 2px;
+    width: 0;
+    background: #00ffff;
+    box-shadow: 0 0 8px #00ffff, 0 0 15px #00ffff;
+    transition: width 0.4s ease-in-out;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.btn{
+    border-color: #fff!important;
+}
+.btn-custom-search {
+  color: #ffffff;
+  border: 1px solid #00bfff!important;
+}
+
+.btn-custom-search:hover {
+  background-color: #00bfff!important; /* Light blue on hover */
+  color: #ffffff!important;            /* Keep text white */
+  border-color: #00bfff!important;
+}
