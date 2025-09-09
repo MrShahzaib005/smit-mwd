@@ -8,19 +8,23 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
-      <link
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg nav-bg">
-        <div class="container-fluid">
+        <div class="container-fluid ms-3 me-3">
           <a class="navbar-brand" href="#">
-            <img class="nav-img" src="./images/zero-logo.png" alt=""/></a>
-            <h1 class="nav-h1 text-white">ZERO</h1>
+            <img class="nav-img" src="./images/logo.png" alt=""
+          /></a>
+          <!-- <h1 class="nav-h1 text-white">ZERO</h1> -->
           <button
             class="navbar-toggler"
             type="button"
@@ -28,28 +32,44 @@
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-white pb-1" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active text-white pb-1"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white pb-1" href="contact.html">Smart Watches</a>
+                <a class="nav-link active text-white pb-1" href="contact.html"
+                  >Smart Watches</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white pb-1" href="contact.html">Zero EarBuds</a>
+                <a class="nav-link active text-white pb-1" href="contact.html"
+                  >Zero EarBuds</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white pb-1" href="contact.html">Headphones</a>
+                <a class="nav-link active text-white pb-1" href="contact.html"
+                  >Headphones</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white pb-1" href="contact.html">Vision 2025</a>
+                <a class="nav-link active text-white pb-1" href="contact.html"
+                  >Vision 2025</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white pb-1" href="contact.html">Support</a>
+                <a class="nav-link active text-white pb-1" href="contact.html"
+                  >Support</a
+                >
               </li>
               <!-- <li class="nav-item dropdown">
                 <a
@@ -80,7 +100,8 @@
                 class="form-control me-2"
                 type="search"
                 placeholder="Search"
-                aria-label="Search"/>
+                aria-label="Search"
+              />
               <button class="btn btn-custom-search text-white" type="submit">
                 Search
               </button>
@@ -89,6 +110,198 @@
         </div>
       </nav>
     </header>
+
+    <!-- CSS slider -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/slider1.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slider2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slider3.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slider4.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slider5.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Category -->
+    <div class="home-category container-fluid mt-5 mb-5">
+      <div class="row justify-content-center gx-2 gy-3 row-cols-lg-4 row-cols-sm-2">
+          <div class="col-lg-3 col-6 home-list text-center">
+            <img src="./images/cate.png" alt="">
+            <p>Smart Watches</p>
+          </div>
+          <div class="col-lg-3 col-6 home-list text-center">
+            <img src="./images/cate1.png" alt="">
+            <p>EarBuds</p>
+          </div>
+          <div class="col-lg-3 col-6 home-list text-center">
+            <img src="./images/cate2.png " alt="">
+            <p>HeadPhones</p>
+          </div>
+          <div class="col-lg-3 col-6 home-list text-center">
+            <img src="./images/cate3.png" alt="">
+            <p>New Launch</p>
+          </div>
+        </div>
+    </div>
+<!-- 
+    <div class="products-h1">
+      <h3>Hot-Selling Gadgets</h3>
+    </div> -->
+
+    <!-- Products List -->
+
+<div class="container my-5">
+  <h4 class="mb-4">Hot-Selling Gadgets</h4>
+  <div class="row g-4">
+
+    <!-- Card Start -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="p-3 product-card">
+        <div class="d-flex justify-content-between">
+          <small class="text-primary">HEAVY BASS DRIVERS</small>
+          <small class="rating">⭐ 4.88</small>
+        </div>
+        <img class="card-img" src="./images/gravity-earbuds.png" alt="Gravity Earbuds" class="img-fluid my-3">
+        <h6>Gravity Earbuds</h6>
+        <p class="text-muted mb-1">Environmental Noise Cancellation</p>
+        <div class="color-options mb-2">
+          <span style="background: black;"></span>
+          <span style="background: lightgreen;"></span>
+          <span style="background: lightblue;"></span>
+        </div>
+        <p class="old-price">Rs.14,999 <span class="discount-badge float-end">77% OFF</span></p>
+        <p class="fw-bold fs-5">Rs.3,499</p>
+        <button class="add-cart-btn w-100">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-6">
+      <div class="p-3 product-card">
+        <div class="d-flex justify-content-between">
+          <small class="text-primary">Play Time</small>
+          <small class="rating">⭐ 4.85</small>
+        </div>
+        <img class="card-img" src="./images/Ecommerce-Image-1.png" alt="Gravity Earbuds" class="img-fluid my-3">
+        <h6>Wave Pro Earbuds</h6>
+        <p class="text-muted mb-1">Quad Mic ENC</p>
+        <div class="color-options mb-2">
+          <span style="background: black;"></span>
+          <span style="background: lightgreen;"></span>
+          <span style="background: lightblue;"></span>
+        </div>
+        <p class="old-price">Rs.14,999 <span class="discount-badge float-end">77% OFF</span></p>
+        <p class="fw-bold fs-5">Rs.3,499</p>
+        <button class="add-cart-btn w-100">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-6">
+      <div class="p-3 product-card">
+        <div class="d-flex justify-content-between">
+          <small class="text-primary">I'M BACK!</small>
+          <small class="rating">⭐ 4.98</small>
+        </div>
+        <img class="card-img" src="./images/Zero_Quantum_Green_01_1.png" alt="Gravity Earbuds" class="img-fluid my-3">
+        <h6>Wave Earbuds</h6>
+        <p class="text-muted mb-1">Environmental Noise Cancellation</p>
+        <div class="color-options mb-2">
+          <span style="background: black;"></span>
+          <span style="background: lightgreen;"></span>
+          <span style="background: lightblue;"></span>
+        </div>
+        <p class="old-price">Rs.14,999 <span class="discount-badge float-end">77% OFF</span></p>
+        <p class="fw-bold fs-5">Rs.3,499</p>
+        <button class="add-cart-btn w-100">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-6">
+      <div class="p-3 product-card">
+        <div class="d-flex justify-content-between">
+          <small class="text-primary">HEAVY BASS DRIVERS</small>
+          <small class="rating">⭐ 4.88</small>
+        </div>
+        <img class="card-img" src="./images/gravity-earbuds.png" alt="Gravity Earbuds" class="img-fluid my-3">
+        <h6>Quantum EarBuds</h6>
+        <p class="text-muted mb-1">Active Noise Cancellation</p>
+        <div class="color-options mb-2">
+          <span style="background: black;"></span>
+          <span style="background: lightgreen;"></span>
+          <span style="background: lightblue;"></span>
+        </div>
+        <p class="old-price">Rs.14,999 <span class="discount-badge float-end">77% OFF</span></p>
+        <p class="fw-bold fs-5">Rs.3,499</p>
+        <button class="add-cart-btn w-100">Add To Cart</button>
+      </div>
+    </div>
+
+    <!-- Card End -->
+
+    <!-- Copy above card and change data for others like Wave Pro, Quantum, Robo Earbuds -->
+
+  </div>
+</div>
+
+<div class="video-wrapper">
+  <video class="video-pre" controls autoplay>
+    <source src="./images/zero-video.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="container">
+  <h4>Just Launched</h4>
+  <div class="row g-4">
+
+    <!-- Card Start -->
+     <div class="col-lg-3 col-sm-6">
+      <div class="p-3 product-card">
+        <div class="d-flex justify-content-between">
+          <small class="text-primary">Best Seller</small>
+          <small class="rating">⭐ 4.88</small>
+        </div>
+        <img class="card-img" src="./images/blue-watch.jpg" alt="">
+        <h6>Luna Smartwatch</h6>
+        <p class="text-muted mb-1">1.39" HD Display</p>
+        <div class="color-options mb-2">
+          <span style="background: black;"></span>
+          <span style="background: black;"></span>
+          <span style="background: black;"></span>
+        </div>
+        <p class="old-price">Rs.15,999 <span class="discount-badge float-end">77% OFF</span></p>
+        <p class="fw-bold fs-5">Rs.4,999</p>
+        <button class="add-card-btn w-100">Add To Card</button>
+      </div>
+     </div>
+  </div>
+</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

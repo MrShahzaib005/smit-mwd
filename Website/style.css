@@ -1,3 +1,67 @@
-.h1{
-    border: 5px solid yellow;
+:root {
+--bg: #0f1222; /* page background */
+--panel: #151936; /* UI panels */
+--accent: #8b7bff; /* accent color */
+--accent-2: #00e0a4; /* secondary accent */
+--text: #e8e9f1; /* primary text */
+--muted: #a4a7c3; /* muted text */
+--card-front: #1b2047; /* card face-down */
+--card-back: #232a62; /* card face-up background */
+--good: #11d67b;
+--bad: #ff6b6b;
+--shadow: 0 10px 30px rgba(0,0,0,.35);
+--radius: 18px;
+--speed: 180ms;
 }
+* { box-sizing: border-box; }
+.card.is-matched .card-inner { box-shadow: 0 0 0 2px var(--good), 0 8px 20px rgba(17,214,123,.3); }
+
+
+.face {
+position:absolute; inset:0;
+display:grid; place-items:center;
+border-radius: 14px;
+backface-visibility: hidden;
+font-size: clamp(26px, 6vw, 44px);
+}
+
+
+.front { /* face-down */
+background: linear-gradient(160deg, var(--card-front), #0f1433);
+border: 1px solid rgba(255,255,255,.07);
+}
+
+
+.back { /* face-up */
+background: radial-gradient(800px 300px at 20% 10%, rgba(255,255,255,.08), transparent 40%),
+linear-gradient(160deg, var(--card-back), #1a2157);
+border: 1px solid rgba(255,255,255,.09);
+transform: rotateY(180deg);
+}
+
+
+/* Win overlay */
+.overlay {
+position: fixed; inset: 0; display: grid; place-items: center;
+background: rgba(4,7,20,.6);
+opacity: 0; pointer-events: none; transition: opacity 200ms ease;
+}
+.overlay.show { opacity: 1; pointer-events: auto; }
+.dialog {
+width: min(520px, 92vw);
+background: linear-gradient(180deg, #14183a, #0c1031);
+border: 1px solid rgba(255,255,255,.08);
+border-radius: 20px; padding: 20px; box-shadow: var(--shadow);
+text-align: center; display: grid; gap: 10px;
+}
+.dialog h2 { margin: 6px 0; font-size: 24px; }
+.dialog p { margin: 0; color: var(--muted); }
+
+
+.row { display:flex; gap:10px; justify-content:center; }
+.chip { background:#0f1433; border:1px solid rgba(255,255,255,.08); padding:8px 12px; border-radius:999px; font-weight:700; }
+
+
+.footer { text-align:center; margin-top: 10px; color: var(--muted); font-size: 12px; }
+.footer a { color: var(--accent-2); text-decoration:none; }
+

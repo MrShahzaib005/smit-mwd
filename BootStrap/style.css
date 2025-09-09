@@ -1,49 +1,107 @@
-img{
-    width: 200px;
-    height: 200px;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  /* color: #2b2b2b; */
 }
 
-.nav-img{
-    width: 70px;
-    height: 50px;
-    border-radius: 20px;
-}
-
-.nav-link{
-    font-size: 20px!important;
-    font-weight: 400!important;
-    padding: 0 15px!important;
-}
-
-.banner{
-    background-image: url('../images/bg110.jpg');   
-}
-.banner img{
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-}
-.banner-h1{
-    color: aliceblue!important;
-    font-size: 100px;
+/* Contact box styling */
+.contact-box {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .navbar{
-    background-color: rgb(65, 110, 224);
+    background-color: #f8f9fa!important ;
+    border: none !important;
+    box-shadow: none !important;
 }
 
-.row img{
-    width: 150px;
-    height: 100px;
+/* Active link underline */
+
+.custom-link {
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.col img{
-    width: 250px;
-    height: 250px;
+.custom-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(180deg, #DE158C 0%, #F3863B 100%);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.custom-link:hover {
+  color: #000 !important; /* hover text color */
+}
+
+.custom-link:hover::after {
+  width: 100%; /* gradient underline expands smoothly */
+}
+
+
+/* Hero Section */
+.hero-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #fdfdfd 0%, #f8f9fa 100%);
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  margin: none;
+}
+
+.text-pink {
+  /* color: #e75480;  */
+  
+  background: linear-gradient(180deg, #DE158C 0%, #F3863B 100%);
+  -webkit-background-clip: text;   /* For Chrome, Safari */
+  -webkit-text-fill-color: transparent;
+  background-clip: text;           /* For Firefox */
+  color: transparent;              /* Fallback */
+
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+@media (min-width: 992px) {
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+}
+
+.contact-container{
+  background-color: #f8f9fa;
+}
+
+.text-white{
+  display: inline; /* or inline-block */
+  white-space: nowrap; /* prevents text from wrapping */
+  font-weight: 700;
+  size: 18px;
+  text-align: center!important;
 }
 
 .footer{
-    background-color: blanchedalmond;
+    background-color: rgba(24, 13, 56, 1);
+}
+
+.footer-img{
+    width: 189px;
+    height: 95px;
+    margin-left: 50%;
+    /* margin-right: 50%; */
+    margin-top: 40px;
+    /* top: 3812px;
+    left: 865px; */
 }
 .slide-img{
     height: 70vh;

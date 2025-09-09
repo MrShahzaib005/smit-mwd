@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+body{
+  height: 100%;
+  background-color: rgb(72, 82, 105);
+}
+.item{
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  color: aliceblue;
+  text-align: center;
+  padding: 30px;
+  flex-grow: 1;
+  /* flex-shrink: 0; */
+  font-size: 25px;
+  font-weight: bold;
+}
+.container{
+  display: flex;
+  border: 3px solid black;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,21 @@
+div {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+input{
+    padding: 7px;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+button{
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    background-color: azure;
+    cursor: pointer;
+}
